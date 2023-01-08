@@ -1,5 +1,4 @@
 import React from "react";
-// import Rating from "react-rating";
 import star from "../assets/star.svg";
 import { Link } from "react-router-dom";
 
@@ -15,8 +14,7 @@ function Card({ image, title, id, description, price, rating, category }) {
           <h1> {price}$</h1>
         </div>
         <p> {description} </p>
-        <Link to={`/products/${id}`}>
-          {" "}
+        <Link to={`/products/`}>
           <a href=""> For more info</a>
         </Link>
       </div>
